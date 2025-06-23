@@ -1,0 +1,1135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1833ee5ba4465ea4799eefbf2cb6deb0, type: 3}
+  m_Name: GhostInputRecording
+  m_EditorClassIdentifier: 
+  inputFrames:
+  - timestamp: 0
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.02
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.04
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.06
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.08
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.099999994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.11999999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.13999999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.15999998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.17999998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.19999997
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.21999997
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.23999996
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.25999996
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.27999997
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.29999998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.32
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.34
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.36
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.38000003
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.40000004
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.42000005
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.44000006
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.46000007
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.48000008
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.50000006
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.52000004
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.54
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.56
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.58
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.59999996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.61999995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.6399999
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.6599999
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.6799999
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.69999987
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.71999985
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.73999983
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.7599998
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.7799998
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.7999998
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.81999975
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.83999974
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.8599997
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.8799997
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.8999997
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.91999966
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.93999964
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.9599996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.9799996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 0.9999996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.0199996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.0399996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.0599996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.0799996
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.0999995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.1199995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.1399995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.1599995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.1799995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.1999995
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.2199994
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.2399994
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.2599994
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.2799994
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.2999994
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.3199993
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.3399993
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.3599993
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.3799993
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.3999993
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.4199992
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.4399992
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.4599992
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.4799992
+    moveInput: {x: -1, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.4999992
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.5199991
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.5399991
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.5599991
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.5799991
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.5999991
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.619999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.639999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.659999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.679999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.699999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.719999
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.7399989
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.7599989
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.7799989
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.7999989
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.8199989
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.8399988
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 1.8599988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.8799988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.8999988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.9199988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.9399987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.9599987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.9799987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 1.9999987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.0199988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.0399988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.0599988
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.0799987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.0999987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.1199987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.1399987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.1599987
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.1799986
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.1999986
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.2199986
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.2399986
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.2599986
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.2799985
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.2999985
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.3199985
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.3399985
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.3599985
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.3799984
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.3999984
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.4199984
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.4399984
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.4599984
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.4799984
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.4999983
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.5199983
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.5399983
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.5599983
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.5799983
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.5999982
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.6199982
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.6399982
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.6599982
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.6799982
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.6999981
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.7199981
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.739998
+    moveInput: {x: 0, y: 1}
+    jumpPressed: 0
+  - timestamp: 2.759998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.779998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.799998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.819998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.839998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.859998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.879998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.899998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.919998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.939998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.959998
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.9799979
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 2.9999979
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.0199978
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.0399978
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.0599978
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.0799978
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.0999978
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.1199977
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.1399977
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.1599977
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.1799977
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.1999977
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.2199976
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.2399976
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.2599976
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.2799976
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.2999976
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.3199975
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.3399975
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.3599975
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.3799975
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.3999975
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.4199975
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.4399974
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.4599974
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.4799974
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.4999974
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.5199974
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.5399973
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.5599973
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.5799973
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.5999973
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.6199973
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.6399972
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.6599972
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.6799972
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.6999972
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.7199972
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.7399971
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.7599971
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.779997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.799997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.819997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.839997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.859997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.879997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.899997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.919997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.939997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.959997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.979997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 3.999997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.019997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.039997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.059997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.079997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.099997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.119997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.139997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.159997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.179997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.199997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.219997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.239997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.259997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.279997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.299997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.319997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.339997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.359997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.379997
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.3999968
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.4199967
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 4.4399967
+    moveInput: {x: 1, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.4599967
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.4799967
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.4999967
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.5199966
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.5399966
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.5599966
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.5799966
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.5999966
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.6199965
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.6399965
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.6599965
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.6799965
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.6999965
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.7199965
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.7399964
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.7599964
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.7799964
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.7999964
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.8199964
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.8399963
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.8599963
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.8799963
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.8999963
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.9199963
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.9399962
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.959996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.979996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 4.999996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.019996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.039996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.059996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.079996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.099996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.119996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.139996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.159996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.179996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.199996
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 5.219996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.239996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.259996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.279996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.299996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.319996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.339996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.359996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.379996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.399996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.419996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.439996
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.4599957
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.4799957
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.4999957
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.5199957
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.5399957
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.5599957
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.5799956
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.5999956
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.6199956
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.6399956
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.6599956
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.6799955
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.6999955
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.7199955
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.7399955
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.7599955
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.7799954
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.7999954
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.8199954
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.8399954
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.8599954
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.8799953
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.8999953
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.9199953
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.9399953
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.9599953
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.9799953
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 5.999995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.019995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.039995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.059995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.079995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.099995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.119995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.139995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.159995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.179995
+    moveInput: {x: 1, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.199995
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.219995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.239995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.259995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.279995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.299995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.319995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.339995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.359995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.379995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.399995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.419995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.439995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.459995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.479995
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.4999948
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.5199947
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.5399947
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.5599947
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.5799947
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.5999947
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.6199946
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.6399946
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.6599946
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.6799946
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.6999946
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.7199945
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.7399945
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.7599945
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.7799945
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.7999945
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.8199944
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.8399944
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.8599944
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.8799944
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.8999944
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.9199944
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.9399943
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.9599943
+    moveInput: {x: 0, y: -1}
+    jumpPressed: 0
+  - timestamp: 6.9799943
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 6.9999943
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.0199943
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.0399942
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.059994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.079994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.099994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.119994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.139994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.159994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.179994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.199994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.219994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.239994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.259994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.279994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.299994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.319994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.339994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.359994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.379994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.399994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.419994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  - timestamp: 7.439994
+    moveInput: {x: 0, y: 0}
+    jumpPressed: 0
+  isRecordingActive: 0
