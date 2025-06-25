@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class clearInputs : MonoBehaviour
 {
-    public GhostInputRecording recordingSO;
+    //public GhostInputRecording recordingSO;
+    public GhostTransformRecording recordingSO;
+
     // Start is called before the first frame update
     void Start()
     {

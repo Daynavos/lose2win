@@ -15,38 +15,63 @@ public class GuardAI : MonoBehaviour {
 
         if (CanSeeTarget("Player") || CanSeeTarget("Ghost")) {
             Debug.Log($"{name} saw a target!");
-            // TODO: Raise alarm or chase
+           
         }
     }
 
-    void Patrol() {
-        if (patrolPoints.Length == 0) return;
+ void Patrol() {
+    if (patrolPoints.Length == 0) return;
 
-        Transform target = patrolPoints[currentPoint];
-        Vector3 dir = (target.position - transform.position).normalized;
-        transform.position += dir * speed * Time.deltaTime;
-        transform.LookAt(target);
+    Transform target = patrolPoints[currentPoint];
+    Vector3 dir = (target.position - transform.position).normalized;
 
-        if (Vector3.Distance(transform.position, target.position) < 0.5f)
-            currentPoint = (currentPoint + 1) % patrolPoints.Length;
+    // Move
+    transform.position += dir * speed * Time.deltaTime;
+
+    // Smoothly rotate toward movement direction
+    if (dir != Vector3.zero) {
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
+
+    // Switch to next point if close enough
+    if (Vector3.Distance(transform.position, target.position) < 0.5f)
+        currentPoint = (currentPoint + 1) % patrolPoints.Length;
+}
+
 
     bool CanSeeTarget(string tag) {
         GameObject target = GameObject.FindWithTag(tag);
         if (!target) return false;
 
+        // Visualize FOV edges
+        Vector3 leftEdge = Quaternion.Euler(0, -visionAngle, 0) * transform.forward * visionRange;
+        Vector3 rightEdge = Quaternion.Euler(0, visionAngle, 0) * transform.forward * visionRange;
+
+        Debug.DrawRay(transform.position, leftEdge, Color.yellow); // left edge of vision
+        Debug.DrawRay(transform.position, rightEdge, Color.yellow); // right edge of vision
+        Debug.DrawRay(transform.position, transform.forward * visionRange, Color.cyan); // center
+
+        
         Vector3 dirToTarget = (target.transform.position - transform.position).normalized;
         float angle = Vector3.Angle(transform.forward, dirToTarget);
 
         if (angle < visionAngle) {
             float distance = Vector3.Distance(transform.position, target.transform.position);
             if (distance < visionRange) {
+                // Draw the vision line
+                Debug.DrawLine(transform.position, target.transform.position, Color.green);
+
+                // Check line of sight
                 if (!Physics.Linecast(transform.position, target.transform.position, detectionMask)) {
                     return true;
+                } else {
+                    Debug.DrawLine(transform.position, target.transform.position, Color.red); // blocked line
                 }
             }
         }
 
         return false;
     }
+
 }

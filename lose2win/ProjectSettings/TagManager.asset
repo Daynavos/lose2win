@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Gaurd
   - Ghost
+  - CinemachineTarget
+  - Key
+  - padlock
   layers:
   - Default
   - TransparentFX

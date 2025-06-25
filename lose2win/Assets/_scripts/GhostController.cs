@@ -21,8 +21,7 @@ public class GhostController : MonoBehaviour {
 
         var frame = recordingSO.inputFrames[currentIndex];
         Vector3 move = new Vector3(frame.moveInput.x, 0, frame.moveInput.y);
-
-        // Move relative to self forward (optional: rotate ghost to face direction)
+        
         controller.Move(transform.TransformDirection(move.normalized) * speed * Time.fixedDeltaTime);
 
         isGrounded = controller.isGrounded;
