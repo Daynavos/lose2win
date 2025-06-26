@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2490705064467037026}
   - component: {fileID: 2028529425936708025}
   - component: {fileID: -2460425618393713418}
-  - component: {fileID: -2888121956859697948}
+  - component: {fileID: 5602388520984811523}
+  - component: {fileID: 411872848474714866}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Ghost
@@ -135,7 +136,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-2888121956859697948
+--- !u!114 &5602388520984811523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,10 +145,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2542399046146393118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ddb424ea902be42b845f4c7a6ca93a, type: 3}
+  m_Script: {fileID: 11500000, guid: c1293b92bb0bb684ab19af0359a3c7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recordingSO: {fileID: 11400000, guid: 55da822541fbe63479e7162ded7c352b, type: 2}
-  speed: 5
-  gravity: -9.81
-  jumpHeight: 2
+  recordingSO: {fileID: 11400000, guid: a48d65cb70e5e7748b3c0a960b32c110, type: 2}
+--- !u!114 &411872848474714866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542399046146393118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de91312b0f15d74c8015b511f0e88f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasKey: 0

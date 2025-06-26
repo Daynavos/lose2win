@@ -9,28 +9,44 @@ public class LoopManager : MonoBehaviour {
     public GhostTransformRecording recordingSO;
     
     void Start() {
-        if (recordingSO.hasFirstRunCompleted) {
-            // Second run: show ghost + second player
-            playerFirstRun.SetActive(false);
-            ghost.SetActive(true);
-            playerSecondRun.SetActive(true);
-        } else {
-            // First run: start clean
-            playerFirstRun.SetActive(true);
-            ghost.SetActive(false);
-            playerSecondRun.SetActive(false);
+        
+        switch (recordingSO.game_state)
+        {
+            case GhostTransformRecording.game_states.start:
+                recordingSO.ClearRecording();
+                recordingSO.canMove = false;
+                playerFirstRun.SetActive(true);
+                ghost.SetActive(false);
+                playerSecondRun.SetActive(false);
+                break;
+            case GhostTransformRecording.game_states.first_run:
+                recordingSO.game_state = GhostTransformRecording.game_states.start;
+                recordingSO.canMove = false;
+                break;
+            case GhostTransformRecording.game_states.second_run:
+                playerFirstRun.SetActive(false);
+                ghost.SetActive(true);
+                playerSecondRun.SetActive(true);
+                break;
         }
     }
     
-    public void StartSecondRun() {
-        if (!recordingSO.hasFirstRunCompleted) {
-            //recordingSO.ClearRecording();
-            recordingSO.StartRecording();
-            recordingSO.hasFirstRunCompleted = true;
-        } else {
-            recordingSO.StopRecording();
-            recordingSO.hasFirstRunCompleted = true;
-            ResetSceneForReplay(); 
+    public void RecordStopButton() {
+        switch (recordingSO.game_state)
+        {
+            case GhostTransformRecording.game_states.start:
+                recordingSO.game_state = GhostTransformRecording.game_states.first_run;
+                recordingSO.canMove = true;
+                recordingSO.StartRecording();
+                break;
+            case GhostTransformRecording.game_states.first_run:
+                recordingSO.game_state = GhostTransformRecording.game_states.second_run;
+                recordingSO.StopRecording();
+                ResetSceneForReplay(); 
+                break;
+            case GhostTransformRecording.game_states.second_run:
+                recordingSO.game_state = GhostTransformRecording.game_states.start;
+                break;
         }
     }
 

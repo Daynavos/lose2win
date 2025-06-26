@@ -5,8 +5,8 @@ public class TransformRecorder : MonoBehaviour {
     private float currentTime;
 
     void Start() {
-        if (recordingSO.isRecording)
-            recordingSO.ClearRecording();
+        // if (recordingSO.isRecording)
+        //     recordingSO.ClearRecording();
 
         currentTime = 0;
     }

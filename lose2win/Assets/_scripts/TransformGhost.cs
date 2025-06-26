@@ -4,6 +4,10 @@ public class TransformGhost : MonoBehaviour {
     public GhostTransformRecording recordingSO;
     private int currentIndex = 0;
 
+    void Start()
+    {
+        currentIndex = 0;
+    }
     void FixedUpdate() {
         if (currentIndex >= recordingSO.frames.Count) return;
 
