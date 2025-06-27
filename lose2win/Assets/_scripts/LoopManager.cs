@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LoopManager : MonoBehaviour {
     public GameObject playerFirstRun;
@@ -8,6 +9,11 @@ public class LoopManager : MonoBehaviour {
     //public GhostInputRecording recordingSO;
     public GhostTransformRecording recordingSO;
     public GameObject LosePanel;
+    public UnityEngine.UI.Image buttonImage;
+    public TMP_Text buttonLabel;
+    public Sprite recordSprite;
+    public Sprite replaySprite;
+    public Sprite stopSprite;
     
     void Start() {
         
@@ -29,6 +35,8 @@ public class LoopManager : MonoBehaviour {
                 playerFirstRun.SetActive(false);
                 ghost.SetActive(true);
                 playerSecondRun.SetActive(true);
+                buttonImage.sprite = stopSprite;
+                buttonLabel.text = "Stop";
                 break;
         }
     }
@@ -40,18 +48,33 @@ public class LoopManager : MonoBehaviour {
                 recordingSO.game_state = GhostTransformRecording.game_states.first_run;
                 recordingSO.canMove = true;
                 recordingSO.StartRecording();
+
+                buttonImage.sprite = replaySprite;
+                buttonLabel.text = "Replay"; 
                 break;
+
             case GhostTransformRecording.game_states.first_run:
                 recordingSO.game_state = GhostTransformRecording.game_states.second_run;
                 recordingSO.StopRecording();
-                ResetSceneForReplay(); 
+                ResetSceneForReplay();
+
+                buttonImage.sprite = stopSprite;
+                buttonLabel.text = "Stop";
                 break;
+
             case GhostTransformRecording.game_states.second_run:
                 recordingSO.game_state = GhostTransformRecording.game_states.start;
+                
+                Destroy(ghost);
+                recordingSO.ClearRecording();
+                recordingSO.canMove = false;
+                
+                buttonImage.sprite = recordSprite;
+                buttonLabel.text = "Record";
                 break;
         }
     }
-
+    
     public void LoseLevel()
     {
         recordingSO.game_state = GhostTransformRecording.game_states.start;

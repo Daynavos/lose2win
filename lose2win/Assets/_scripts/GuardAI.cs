@@ -17,7 +17,8 @@ public class GuardAI : MonoBehaviour {
 
     private bool hasBeenSpotted = false;
 
-    
+    public MeshRenderer ConemeshRenderer;
+    public Material SpottedConemeshMaterial;
     void Update() {
         Patrol();
         // Start countdown once a target is spotted
@@ -29,7 +30,7 @@ public class GuardAI : MonoBehaviour {
         // Once spotted, tick the timer
         if (hasBeenSpotted) {
             detectionTimer += Time.deltaTime;
-
+            ConemeshRenderer.material =  SpottedConemeshMaterial;
             if (detectionTimer >= timeToLose) {
                 Debug.Log("Level lost!");
                 gameManager.GetComponent<LoopManager>().LoseLevel();
