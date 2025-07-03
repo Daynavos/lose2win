@@ -11,8 +11,13 @@ public class uiMan : MonoBehaviour
     public GameObject StartMissionPanel;
     public GameObject CharliePanel;
     
+    public GhostTransformRecording recordingSO;
+    
     public List<GameObject> CharlieList = new List<GameObject>();
     private int charlieIndex = 0;
+    
+    public GameObject Scematic;
+    public BoxCollider RRRcollider;
     
     public void NEXT_button()
     {
@@ -24,12 +29,24 @@ public class uiMan : MonoBehaviour
     {
         StartMissionPanel.SetActive(false);
         CharliePanel.SetActive(true);
+        recordingSO.canMove = true;
+        
     }
 
     public void charlieSpeaks()
     {
         charlieIndex++;
+        Debug.Log(charlieIndex);
         CharlieList[charlieIndex].SetActive(true);
         CharlieList[charlieIndex-1].SetActive(false);
     }
+
+    public void EquipNext()
+    {
+        RRRcollider.enabled = true;
+        recordingSO.canMove = true;
+        Scematic.SetActive(false);
+    }
+    
+    
 }

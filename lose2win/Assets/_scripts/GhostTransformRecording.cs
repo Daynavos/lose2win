@@ -10,6 +10,7 @@ public class GhostTransformRecording : ScriptableObject {
     }
     public game_states game_state = game_states.start;
     public bool canMove = false;
+    public bool canRecord = false;
     public List<TransformSnapshot> frames = new List<TransformSnapshot>();
     public bool isRecording = false;
     public void ClearRecording() {
@@ -20,7 +21,11 @@ public class GhostTransformRecording : ScriptableObject {
         isRecording = false;
     }
     public void StartRecording() {
-        isRecording = true;
+        if (canRecord)
+        {
+            isRecording = true;
+        }
+        
     }
 }
 

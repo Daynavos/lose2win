@@ -9,6 +9,12 @@ TagManager:
   - CinemachineTarget
   - Key
   - padlock
+  - bench
+  - case
+  - folder
+  - RRR
+  - padA
+  - padB
   layers:
   - Default
   - TransparentFX

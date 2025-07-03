@@ -16,64 +16,68 @@ public class LoopManager : MonoBehaviour {
     public Sprite stopSprite;
     
     void Start() {
-        
-        switch (recordingSO.game_state)
-        {
-            case GhostTransformRecording.game_states.start:
-                Time.timeScale = 1;
-                recordingSO.ClearRecording();
-                recordingSO.canMove = false;
-                playerFirstRun.SetActive(true);
-                ghost.SetActive(false);
-                playerSecondRun.SetActive(false);
-                break;
-            case GhostTransformRecording.game_states.first_run:
-                recordingSO.game_state = GhostTransformRecording.game_states.start;
-                recordingSO.canMove = false;
-                break;
-            case GhostTransformRecording.game_states.second_run:
-                playerFirstRun.SetActive(false);
-                ghost.SetActive(true);
-                playerSecondRun.SetActive(true);
-                buttonImage.sprite = stopSprite;
-                buttonLabel.text = "Stop";
-                break;
-        }
+        playerFirstRun.SetActive(true);
+        ghost.SetActive(false);
+        playerSecondRun.SetActive(false);
+        recordingSO.game_state = GhostTransformRecording.game_states.start;
     }
     
-    public void RecordStopButton() {
-        switch (recordingSO.game_state)
-        {
-            case GhostTransformRecording.game_states.start:
-                recordingSO.game_state = GhostTransformRecording.game_states.first_run;
-                recordingSO.canMove = true;
-                recordingSO.StartRecording();
+public SceneStateRecorder stateRecorder; // Assign this in the Inspector
 
-                buttonImage.sprite = replaySprite;
-                buttonLabel.text = "Replay"; 
-                break;
+public void RecordStopButton()
+{
+    switch (recordingSO.game_state)
+    {
+        case GhostTransformRecording.game_states.start:
+            // --- Begin First Run ---
+            stateRecorder.TakeSnapshot(); // Capture current state before run
+            recordingSO.StartRecording();
+            recordingSO.canMove = true;
+            recordingSO.game_state = GhostTransformRecording.game_states.first_run;
 
-            case GhostTransformRecording.game_states.first_run:
-                recordingSO.game_state = GhostTransformRecording.game_states.second_run;
-                recordingSO.StopRecording();
-                ResetSceneForReplay();
+            playerFirstRun.SetActive(true);
+            playerSecondRun.SetActive(false);
+            ghost.SetActive(false);
 
-                buttonImage.sprite = stopSprite;
-                buttonLabel.text = "Stop";
-                break;
+            buttonImage.sprite = replaySprite;
+            buttonLabel.text = "Replay";
+            break;
 
-            case GhostTransformRecording.game_states.second_run:
-                recordingSO.game_state = GhostTransformRecording.game_states.start;
-                
-                Destroy(ghost);
-                recordingSO.ClearRecording();
-                recordingSO.canMove = false;
-                
-                buttonImage.sprite = recordSprite;
-                buttonLabel.text = "Record";
-                break;
-        }
+        case GhostTransformRecording.game_states.first_run:
+            // --- End First Run / Begin Second Run ---
+            recordingSO.StopRecording();
+            recordingSO.game_state = GhostTransformRecording.game_states.second_run;
+
+            stateRecorder.RestoreSnapshot(); // Restore scene to start-of-run state
+
+            playerFirstRun.SetActive(false);
+            playerSecondRun.SetActive(true);
+            ghost.SetActive(true);
+            recordingSO.canMove = true;
+
+            buttonImage.sprite = stopSprite;
+            buttonLabel.text = "Stop";
+            break;
+
+        case GhostTransformRecording.game_states.second_run:
+            // --- Reset to Initial State ---
+            recordingSO.ClearRecording();
+            recordingSO.canMove = false;
+            recordingSO.game_state = GhostTransformRecording.game_states.start;
+
+            Destroy(ghost); // Or reset it manually if you plan to reuse
+            // playerFirstRun.SetActive(true);
+            // playerSecondRun.SetActive(false);
+            // ghost.SetActive(false); // not needed if destroyed
+
+            buttonImage.sprite = recordSprite;
+            buttonLabel.text = "Record";
+            break;
     }
+}
+
+    
+    
     
     public void LoseLevel()
     {
