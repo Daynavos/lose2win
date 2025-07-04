@@ -4,7 +4,7 @@ using UnityEngine;
 public class GhostController : MonoBehaviour {
     public GhostInputRecording recordingSO;
     private CharacterController controller;
-    private int currentIndex;
+    public int currentIndex;
     private Vector3 velocity;
     private bool isGrounded;
 

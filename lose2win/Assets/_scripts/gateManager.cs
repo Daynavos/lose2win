@@ -9,6 +9,7 @@ public class gateManager : MonoBehaviour
     
     public GameObject padlockA;
     public GameObject padlockB;
+    public GameObject gate;
 
     void Update()
     {
@@ -17,7 +18,7 @@ public class gateManager : MonoBehaviour
         
         if (padLockA_primed && padLockB_primed)
         {
-            Destroy(gameObject);
+            gate.SetActive(false);
         }
     }
 }

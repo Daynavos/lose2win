@@ -17,7 +17,7 @@ public class uiMan : MonoBehaviour
     private int charlieIndex = 0;
     
     public GameObject Scematic;
-    public BoxCollider RRRcollider;
+    public MeshCollider RRRcollider;
     
     public void NEXT_button()
     {

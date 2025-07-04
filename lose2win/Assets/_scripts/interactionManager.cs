@@ -23,41 +23,57 @@ public class interactionManager : MonoBehaviour
     
     public GhostTransformRecording recordingSO;
     
+    private LoopManager loopManager;
+    public GameObject loopManObj;
+    
 
     void Start()
     {
         uiManScript = canvas.GetComponent<uiMan>();
         benched = false;
+        loopManager = loopManObj.gameObject.GetComponent<LoopManager>();
     }
     public void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("bench"))
+        {
+            uiManScript.charlieSpeaks();
+        }
+        
         if (other.CompareTag("Key"))
         {
             hasKey = true;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
 
         if (other.CompareTag("padA"))
         {
+            Debug.Log("padA");
             if (benched)
             {
                 uiManScript.charlieSpeaks();
                 recordingSO.canRecord = true;
+                loopManager.originPad = other.transform;
+                Debug.Log(loopManager.originPad);
             }
         }
         
         if (other.CompareTag("padB"))
         {
-            if (keyed)
+            if (benched)
             {
                 uiManScript.charlieSpeaks();
                 recordingSO.canRecord = true;
+                loopManager.originPad = other.transform;
+                Debug.Log(loopManager.originPad);
             }
         }
         
     }
     public void OnTriggerExit(Collider other)
     {
+        
+        
         if (other.CompareTag("padlock"))
         {
             canSwitch = false;
@@ -65,12 +81,18 @@ public class interactionManager : MonoBehaviour
 
         if (other.CompareTag("padA"))
         {
-            recordingSO.canRecord = false;
+            if (!recordingSO.isRecording)
+            {
+                recordingSO.canRecord = false;
+            }
         }
         
         if (other.CompareTag("padB"))
         {
-            recordingSO.canRecord = false;
+            if (!recordingSO.isRecording)
+            {
+                recordingSO.canRecord = false;
+            }
         }
     }
 
@@ -100,6 +122,7 @@ public class interactionManager : MonoBehaviour
                     {
                         // Example: disable the keycard
                         target.SetActive(false);
+                        uiManScript.charlieSpeaks();
                     }
 
                     if (target.CompareTag("case"))

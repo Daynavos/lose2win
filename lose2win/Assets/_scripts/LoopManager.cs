@@ -14,13 +14,23 @@ public class LoopManager : MonoBehaviour {
     public Sprite recordSprite;
     public Sprite replaySprite;
     public Sprite stopSprite;
+
+    public Transform originPad;
+    public Transform nextPhase;
+    
+    public GhostController ghostController;
     
     void Start() {
         playerFirstRun.SetActive(true);
         ghost.SetActive(false);
         playerSecondRun.SetActive(false);
         recordingSO.game_state = GhostTransformRecording.game_states.start;
+        recordingSO.ClearRecording();
+        recordingSO.canMove = false;
+
+        ghostController = ghost.GetComponent<GhostController>(); // ✅ safe here
     }
+
     
 public SceneStateRecorder stateRecorder; // Assign this in the Inspector
 
@@ -52,7 +62,22 @@ public void RecordStopButton()
 
             playerFirstRun.SetActive(false);
             playerSecondRun.SetActive(true);
+            var cc = playerSecondRun.GetComponent<CharacterController>();
+// Handle second player movement
+            if (cc != null) cc.enabled = false;
+            playerSecondRun.transform.position = originPad.position;
+            if (cc != null) cc.enabled = true;
+
+// Handle ghost movement
             ghost.SetActive(true);
+            var ghostCC = ghost.GetComponent<CharacterController>();
+            if (ghostCC != null) ghostCC.enabled = false;
+            ghost.transform.position = originPad.position;
+            if (ghostCC != null) ghostCC.enabled = true;
+
+            
+
+            
             recordingSO.canMove = true;
 
             buttonImage.sprite = stopSprite;
@@ -62,23 +87,39 @@ public void RecordStopButton()
         case GhostTransformRecording.game_states.second_run:
             // --- Reset to Initial State ---
             recordingSO.ClearRecording();
-            recordingSO.canMove = false;
             recordingSO.game_state = GhostTransformRecording.game_states.start;
+            if (ghostController != null)
+            {
+                ghostController.currentIndex = 0;
+            }
+            else
+            {
+                Debug.LogWarning("GhostController was null when trying to reset playback.");
+            }
 
-            Destroy(ghost); // Or reset it manually if you plan to reuse
-            // playerFirstRun.SetActive(true);
-            // playerSecondRun.SetActive(false);
-            // ghost.SetActive(false); // not needed if destroyed
+            // Disable ghost and second player
+            ghost.SetActive(false);
+            playerSecondRun.SetActive(false);
 
+            // Move first player to where second player ended
+            var cc1 = playerFirstRun.GetComponent<CharacterController>();
+            if (cc1 != null) cc1.enabled = false;
+            playerFirstRun.transform.position = playerSecondRun.transform.position;
+            playerFirstRun.transform.rotation = playerSecondRun.transform.rotation;
+            if (cc1 != null) cc1.enabled = true;
+
+            playerFirstRun.SetActive(true);
+            recordingSO.canMove = true;
+            recordingSO.canRecord = false;
+
+            // Update UI
             buttonImage.sprite = recordSprite;
             buttonLabel.text = "Record";
             break;
     }
 }
 
-    
-    
-    
+
     public void LoseLevel()
     {
         recordingSO.game_state = GhostTransformRecording.game_states.start;
