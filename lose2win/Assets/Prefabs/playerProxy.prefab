@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 5319764525439320677}
   - component: {fileID: 2653918733910701428}
   - component: {fileID: 1148243653215642390}
-  - component: {fileID: 7012826949089726823}
   m_Layer: 0
   m_Name: playerProxy
   m_TagString: Player
@@ -156,6 +155,10 @@ MonoBehaviour:
   mouseSensitivity: 3
   gravity: -9.81
   jumpHeight: 0
+  interactRange: 3
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 0
   recordingSO: {fileID: 11400000, guid: a48d65cb70e5e7748b3c0a960b32c110, type: 2}
 --- !u!114 &2653918733910701428
 MonoBehaviour:
@@ -184,20 +187,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasKey: 0
   canvas: {fileID: 0}
-  uiManScript: {fileID: 0}
---- !u!114 &7012826949089726823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4563578681464735563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2b14d36f11e4fd4d91ba708196221ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  interactRange: 3
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  cameraTransform: {fileID: 4310948730468245425}
+  E_image: {fileID: 0}
+  openCase: {fileID: 0}
+  Scematic: {fileID: 0}
   recordingSO: {fileID: 11400000, guid: a48d65cb70e5e7748b3c0a960b32c110, type: 2}
+  loopManObj: {fileID: 0}
 --- !u!1 &8971189978590091126
 GameObject:
   m_ObjectHideFlags: 0
